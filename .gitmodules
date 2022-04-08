@@ -1,0 +1,3 @@
+[submodule "custom-driver-template"]
+	path = custom-driver-template
+	url = git@github.com:ianphan-xt/custom-driver-template.git
