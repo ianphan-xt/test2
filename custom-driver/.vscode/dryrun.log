@@ -1,0 +1,9 @@
+/usr/bin/make all --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/iphan/depot/system-image/custom-driver'
+mkdir -p /home/iphan/depot/system-image/custom-driver/build/release
+arm-linux-gnueabihf-g++ -g -Wall -I/home/iphan/depot/system-image/custom-driver/src -I/home/iphan/depot/system-image/custom-driver/src/idl/include -L/home/iphan/depot/system-image/custom-driver/src/idl/lib -DCDNAME=\"test\" -DCDRXTHREAD=\"\" -DCDRXFUNCTION=\"\" -o /home/iphan/depot/system-image/custom-driver/build/release/test src/main.cpp src/example.cpp -lidl -lmosquitto -lpthread -lrt 
+mkdir -p /home/iphan/depot/system-image/custom-driver/build/release/glpo
+mkdir -p /home/iphan/depot/system-image/custom-driver/build/release/image
+./build.sh /home/iphan/depot/system-image/custom-driver test "test driver protocol engine for SmartServer IoT" 127 1.00.004 "test_xif" ".csv" "Copyright 2019 - 2022 Dialog Semiconductor.  All Rights Reserved." "Dialog Semiconductor, A Renesas Company" "Dialog test Custom Driver License"
+make: Leaving directory '/home/iphan/depot/system-image/custom-driver'
+ 
